@@ -1,0 +1,123 @@
+@media  all and (max-width: 768px) {
+  /* ==========================================
+                COMMON CSS 
+   ========================================== */
+  *{
+     box-sizing: border-box;
+   }
+   body{
+    margin: 0;
+    padding: 0;
+   }
+
+  .container{
+    max-width: 88%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-size: 23px !important;
+  }
+
+  button{
+    font-size: 15px;
+  }
+  
+  p{
+    font-size: 14px;
+  }
+
+  /* ==========================================
+                MAIN CSS 
+   ========================================== */
+   #virus_menu{
+    flex-basis: auto;
+   }
+
+   .virus_main_menu{
+   align-items: center;
+   }
+
+   .inner_slider_area h1{
+    font-size: 32px !important;
+   }
+
+   .inner_slider_area{
+    height: 415px;
+   }
+
+   .slider_angle_child{
+    width: 65px;
+    height: 65px;
+   }
+
+  .about_img_area{
+    display: none;
+  }
+
+  #information_area{
+    margin-top: 280px;
+  }
+
+  .information_img{
+    display: none;
+  }
+
+  .protection_childs{
+    flex-direction: column;
+  }
+
+  .protection_child{
+    margin-bottom: 35px;
+  }
+
+  .protection_child_txt{
+    margin-bottom: 0px;
+  }
+
+  .doctor_childs{
+    flex-direction: column;
+  }
+
+  .doctor_child{
+    flex-basis: 280px;
+    margin-bottom: 75px;
+  }
+  .doctor_child:last-child{
+    margin-bottom: 0px;
+  }
+
+  .case_childs{
+    flex-direction: column;
+  }
+
+  .case_child{
+    flex-basis: 270px;
+    margin-bottom: 25px;
+  }
+
+  .update_email input{
+    width: 100%;
+  }
+
+  .update_email button{
+    padding: 20px 30px;
+  }
+
+  .upper_footer{
+  flex-direction: column;
+  }
+
+  .upper_footer_child{
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+
+  .lower_footer span{
+    font-size: 13px;
+  }
+}

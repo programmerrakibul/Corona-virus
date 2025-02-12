@@ -1,0 +1,597 @@
+/* ==========================================
+                COMMON CSS 
+   ========================================== */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: #151515;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.container{
+  max-width: 1024px;
+  width: 96%;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6{
+  font-size: 40px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #151515;
+}
+
+p{
+  color: #151515;
+  font-size: 15px;
+  line-height: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  text-transform: uppercase;
+  color: #fefefd;
+  background: #05254d;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ==========================================
+                HEADER AREA CSS 
+   ========================================== */
+#virus_header{
+  width: 100%;
+  clear: both;
+  background: #00132b;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#virus_header_icn {
+    padding: 20px 35px;
+}
+
+#virus_header_icn a i{
+  color: #fef6fc;
+  font-size: 18px;
+}
+
+#virus_menu{
+  clear: both;
+  flex-basis: 1024px;
+  background: #ed242e;
+}
+
+.virus_main_menu{
+  background: #ed242e;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+ul.virus_main_menu li {
+    padding: 20px 10px;
+}
+
+ul.virus_main_menu li a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+    transition: .3s;
+}
+
+ul.virus_main_menu li a:hover{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+                SLIDER AREA CSS 
+   ========================================== */
+#slider_area{
+  width: 100%;
+  clear: both;
+  background-image: url(../Images/slider-area.png);
+  background-position: center center;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.inner_slider_area{
+  padding-left: 8%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.inner_slider_area h1{
+  font-size: 55px;
+  color: #fef6fc;
+  margin-bottom: 40px;
+}
+
+.slider_btn button{
+  color: #00132b;
+  background: #fef6fc;
+  transition: .3s;
+  padding: 10px 32px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.slider_btn button:hover{
+  color: #fef6fc;
+  background-color: #ed1c24;
+}
+
+.slider_angle{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.slider_angle_child{
+  width: 120px;
+  height: 120px;
+  background-color: #ed1c24;
+  border-radius: 100%;
+  align-content: center;
+  text-align: center;
+  transition: .3s;
+}
+
+.slider_angle_child:hover{
+  background: #96305e;
+}
+
+.slider_angle_child i{
+  color: #fcfbfe;
+  font-size: 35px;
+}
+
+.slider_left_arrow {
+    margin-left: -3%;
+}
+
+.slider_right_arrow {
+    margin-right: -3%;
+}
+
+/* ==========================================
+                ABOUT AREA CSS 
+   ========================================== */
+#about_area{
+  width: 100%;
+  clear: both;
+  position: absolute;
+  top: 520px;
+}
+
+.inner_about_area{
+  background: #ffffff;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0px 3px 14px 7px #ecebea7a;
+}
+
+.about_txt_area{
+  flex-basis: 68%;
+}
+
+.about_txt_area h3{
+  color: #081419;
+  font-size: 30px;
+}
+
+.about_txt_area p{
+  color: #081419;
+  margin: 20px 0px;
+  text-align: start;
+}
+
+.about_txt_area button{
+  transition: .3s;
+}
+
+.about_txt_area button:hover{
+  background: #ed1c24;
+}
+
+.about_img_area{
+  flex-basis: 30%;
+}
+
+/* ==========================================
+                INFORMATION AREA CSS 
+   ========================================== */
+#information_area{
+  width: 100%;
+  clear: both;
+  margin-top: 340px;
+  margin-bottom: 70px;
+}
+
+.inner_information{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.information_img, .information_txt{
+  flex-basis: 430px;
+}
+
+.information_txt p {
+    text-align: start;
+    margin: 20px 0px;
+}
+
+.information_txt button{
+  background-color: #ed1c24;
+  transition: .3s;
+}
+
+.information_txt button:hover{
+  background-color: #0a264a;
+}
+
+/* ==========================================
+                PROTECTION AREA CSS 
+   ========================================== */
+#protection_area{
+  width: 100%;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+.protection_header h3{
+  text-align: center;
+  font-size: 33px;
+  margin: 10px 0px;
+}
+
+.protection_header p {
+  margin-bottom: 25px;
+}
+
+.protection_childs{
+  padding: 60px 30px;
+  background-image: url(../Images/Cases-02.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+.protection_childs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.protection_child {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.protection_child_txt {
+    background: #fef6fc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.protection_child_txt img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0px;
+}
+
+.protection_child_txt h5 {
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 8px 0px;
+}
+
+.protection_child_txt p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.protection_child_btn {
+    margin-top: 20px;
+}
+
+.protection_child_btn button {
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.protection_child_btn button:hover{
+  background: #ed1c24;
+}
+
+/* ==========================================
+                CASE AREA CSS 
+   ========================================== */
+#case_area{
+  width: 100%;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+.case_header{
+  margin: 20px 0px;
+}
+
+.case_header h3{
+  text-align: center;
+  font-size: 33px;
+  margin: 15px 0;
+}
+
+.case_header p{
+  width: 80%;
+  margin: 5px auto;
+}
+
+.case_childs {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.case_child {
+    padding: 15px;
+    flex-basis: 320px;
+    box-shadow: 0px 0px 21px 9px #ddddddb8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.case_child h5 {
+    font-size: 25px;
+    margin: 12px 0px;
+    text-transform: capitalize;
+}
+
+.case_child p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: fangsong;
+}
+
+.case_child p a {
+    color: #ed1c24;
+}
+
+/* ==========================================
+                DOCTORS AREA CSS 
+   ========================================== */
+#doctors_area{
+  width: 100%;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+.doctors_area_title{
+  width: 100%;
+}
+
+.doctors_area_title h2{
+  text-align: center;
+}
+
+.doctor_childs {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.doctor_child {
+    position: relative;
+    box-shadow: 0px 0px 7px 0px #ddd;
+    padding: 35px 25px;
+    flex-basis: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.doctor_child img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -43px;
+}
+
+.doctor_child h5 {
+    font-size: 17px;
+    margin: 15px 0px;
+}
+
+.doctor_child span img {
+    width: 25px;
+    height: 25px;
+    margin-top: 35px;
+    position: unset;
+}
+
+/* ==========================================
+                UPDATE AREA CSS 
+   ========================================== */
+#update_area{
+  width: 100%;
+  clear: both;
+}
+
+.update_title{
+  width: 100%;
+  margin: 25px 0px;
+}
+
+.update_title h3{
+  text-align: center;
+  font-size: 31px;
+}
+
+form#update_form{
+  background-image: url(../Images/Update-area.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.update_email{
+  padding: 10px;
+  text-align: center;
+}
+
+.update_email input{
+  width: 90%;
+  margin: 20px 0px;
+  background: transparent;
+  border: 1px solid #fefefd;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.update_email input::placeholder{
+  color: #fefefd;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.update_email button{
+  margin: 15px;
+  font-size: 14px;
+  padding: 20px 55px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.update_email button:hover{
+  background: #111111;
+}
+
+/* ==========================================
+                FOOTER AREA CSS 
+   ========================================== */
+#footer_area{
+  width: 100%;
+  clear: both;
+  background: #111111;
+}
+
+.upper_footer{
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.upper_footer_child{
+  flex-basis: 235px;
+}
+
+.upper_footer_child h5{
+  font-size: 20px;
+  color: #fefefd;
+  margin: 25px 0px;
+}
+
+.upper_footer_child p{
+  font-size: 14px;
+  text-align: start;
+  color: #fefefd;
+}
+
+.upper_footer_child span{
+  font-size: 14px;
+  text-align: start;
+  color: #fefefd;
+  display: block;
+  margin: 15px 0px;
+}
+
+.upper_footer_child span i {
+    margin-right: 10px;
+}
+
+.lower_footer{
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+  border-top: 1px solid #ffffff;
+  margin: 0px auto;
+}
+
+.lower_footer span{
+  color: #ffffff;
+  font-size: 14px;
+}
